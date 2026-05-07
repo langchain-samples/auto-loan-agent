@@ -1,0 +1,7 @@
+{
+  "dependencies": ["."],
+  "graphs": {
+    "auto_loan_agent": "./loan_workflow_orchestrator.py:graph"
+  },
+  "env": "./.env"
+}

@@ -1,0 +1,13 @@
+.env
+arch.excalidraw
+.venv
+.cursor
+auto_loan_agent_context.md
+__pycache__
+.langgraph_api/         
+auto_loan_agent.egg-info/   
+.claude/                
+.DS_Store               
+*.pyc                   
+.streamlit/
+.claude/

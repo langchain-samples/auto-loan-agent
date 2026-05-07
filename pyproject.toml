@@ -1,0 +1,23 @@
+[project]
+name = "auto-loan-agent"
+version = "0.1.0"
+description = ""
+requires-python = ">=3.11"
+dependencies = [
+    "deepagents",
+    "langgraph",
+    "langgraph-sdk",
+    "langsmith",
+    "python-dotenv",
+    "streamlit>=1.40",
+]
+
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools]
+py-modules = ["loan_workflow_orchestrator", "stip_agent"]
+
+[tool.setuptools.packages.find]
+include = ["utils*"]
