@@ -3,9 +3,12 @@
 import uuid
 import base64
 from langsmith import Client
+from dotenv import load_dotenv
 
 from evaluators import evaluators
 from loan_workflow_orchestrator import graph
+
+load_dotenv()
 
 ls_client = Client()
 # Dataset is looked up by name; create_dataset.py uses the same name.

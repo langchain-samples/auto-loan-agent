@@ -10,9 +10,9 @@ load_dotenv()
 ls_client = Client()
 
 dataset_name = "ds-auto-loan-agent"
-dataset_exists = ls_client.list_datasets(dataset_name=dataset_name)
+dataset_exists = any(ls_client.list_datasets(dataset_name=dataset_name))
 
-if dataset_exists:
+if not dataset_exists:
 
     # PDF URLs
     pdf_urls = {
